@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black"
+    android:orientation="vertical">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tableLayout"
+        android:stretchColumns="*"
+        android:shrinkColumns="*">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="表格布局"
+            android:gravity="left"
+            android:textColor="@android:color/white"/>
+        <TableRow>
+            <TextView
+                android:text="序号"
+                android:gravity="left"
+                android:textColor="@android:color/white"/>
+            <TextView
+                android:text="姓名"
+                android:gravity="left"
+                android:textColor="@android:color/white"/>
+            <TextView
+                android:text="学院"
+                android:gravity="left"
+                android:textColor="@android:color/white"/>
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:text="1"
+                android:gravity="left"
+                android:textColor="@android:color/white"/>
+            <TextView
+                android:text="张三"
+                android:gravity="left"
+                android:textColor="@android:color/white"/>
+            <TextView
+                android:text="软件工程"
+                android:gravity="left"
+                android:textColor="@android:color/white"/>
+        </TableRow>
+
+    </TableLayout>
+
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:stretchColumns="*"
+        android:shrinkColumns="*"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:textColor="@android:color/white"
+            android:text="动态新增, 在下面输入新增的信息"/>
+
+        <TableRow>
+            <EditText
+                android:id="@+id/edit_num"
+                android:hint="序号"
+                android:textColorHint="@android:color/darker_gray"
+                android:textColor="@android:color/black"
+                android:background="@android:color/white" />
+            <EditText
+                android:id="@+id/edit_name"
+                android:hint="姓名"
+                android:textColorHint="@android:color/darker_gray"
+                android:textColor="@android:color/black"
+                android:background="@android:color/white"
+                android:layout_marginLeft="5dp"/>
+            <EditText
+                android:id="@+id/edit_college"
+                android:hint="学院"
+                android:textColorHint="@android:color/darker_gray"
+                android:textColor="@android:color/black"
+                android:background="@android:color/white"
+                android:layout_marginLeft="5dp"/>
+        </TableRow>
+        <Button
+            android:id="@+id/btn_add"
+            android:text="添加"/>
+
+    </TableLayout>
+
+</LinearLayout>
